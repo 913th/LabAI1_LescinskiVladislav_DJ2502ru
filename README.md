@@ -18,8 +18,7 @@
 Проект реализует систему поведения врагов на основе конечных автоматов. Базовый набор состояний:
 
 ```
-Idle → Patrol → Chase → Attack
-Chase → Search → Patrol
+Idle / Patrol / Chase / Attack / Search / Death
 ```
 
 Для второго типа врага (телепортирующегося) автомат дополняется состоянием **Teleport**.
@@ -28,7 +27,10 @@ Chase → Search → Patrol
 
 ### Обычный враг
 
-Использует базовый набор состояний: `Idle`, `Patrol`, `Chase`, `Search`, `Attack`.
+Использует базовый набор состояний: `Idle`, `Patrol`, `Chase`, `Search`, `Attack`, `Death`
+
+![FSM обычного NPC]<img width="1920" height="2385" alt="Обычный NPC (FSM)" src="https://github.com/user-attachments/assets/b15c1602-46c2-4ee7-a1aa-c0fce18dfb35" />
+
 
 ### Телепортирующийся враг
 
